@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+<p >
+  <strong>Image:</strong>
+  <% @product.image.each do |image|%>
+    <img src="<%= image.url %>" alt="" height="50" width="80">
+  <% end %>
+
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @product.desc %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @product.address %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @product.user_id %>
+</p>
+
+	<%= link_to (current_user.like.present? ? "dislike"  : " like"), like_create_path(likeable_id: @product.id, likeable_type: "Product"), method: :post   %>(<%= @product.likes.where(like: true).count %>)
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+
+
+<style type="text/css">
+	.green
+	{
+		color: red;
+	}
+
+.red
+	{
+		color: green;
+	}
+
+</style>
+ <div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+  this.page.url = "<%= request.original_url %>";  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = "<%= @product.desc %>"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//vishal.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
