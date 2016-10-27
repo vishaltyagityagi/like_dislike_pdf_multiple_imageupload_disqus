@@ -13606,3 +13606,444 @@ Sent data report.pdf (0.7ms)
 Completed 200 OK in 327ms (Views: 0.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/download_products/product_id" for 127.0.0.1 at 2016-10-27 18:11:59 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:43: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:43: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.1ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.3ms)
+Started GET "/download_products/product_id" for 127.0.0.1 at 2016-10-27 18:11:59 +0530
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:43: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:43: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:101: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+Started GET "/download_products/product_id" for 127.0.0.1 at 2016-10-27 18:12:29 +0530
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:44: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:103: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:44: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:103: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:12:43 +0530
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:12:58 +0530
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.1ms)
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:13:02 +0530
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.1ms)
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:13:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/products_controller.rb:45: syntax error, unexpected ')', expecting keyword_end
+app/controllers/products_controller.rb:104: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.5ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.9ms)
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:13:29 +0530
+  
+SyntaxError (/home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/products_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.1ms)
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:14:04 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 323ms (Views: 283.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:14:06 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:15:06 +0530
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 283049ms (Views: 78.0ms | ActiveRecord: 6.2ms)
+
+
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 4355ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `price' for #<Product:0xb33ab444>):
+  
+app/models/product.rb:23:in `paypal_url'
+app/controllers/products_controller.rb:45:in `show'
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/vishal/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.3ms)
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:20:31 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 110ms (Views: 59.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:20:32 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (1.4ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 72ms (Views: 53.1ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:20:55 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 76ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:20:57 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.4ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 20040ms (Views: 37.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:23:01 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 81ms (Views: 34.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:23:08 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:23:09 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 42ms (Views: 35.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:23:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 330ms (Views: 270.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:23:56 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 69ms (Views: 57.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:24:17 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 71ms (Views: 41.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:24:24 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:26:10 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.6ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  [1m[36mLike Load (0.4ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (1757.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 107798ms (Views: 1800.1ms | ActiveRecord: 4.8ms)
+
+
+Completed 200 OK in 1790ms (Views: 60.3ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:26:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 342ms (Views: 280.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:26:32 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 5005ms (Views: 50.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:27:08 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 56ms (Views: 32.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:27:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 335ms (Views: 275.2ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:27:19 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 2027ms (Views: 52.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:27:45 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:29:16 +0530
+  [1m[36mLike Load (0.3ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered products/show.html.erb within layouts/application (11.8ms)
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mLike Load (0.6ms)[0m  [1m[34mSELECT  "likes".* FROM "likes" WHERE "likes"."user_id" = $1 LIMIT $2[0m  [["user_id", "12"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" WHERE "likes"."likeable_id" = $1 AND "likes"."likeable_type" = $2 AND "likes"."like" = $3[0m  [["likeable_id", "47"], ["likeable_type", "Product"], ["like", true]]
+  Rendered products/show.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 95440ms (Views: 4774.7ms | ActiveRecord: 3.1ms)
+
+
+Completed 200 OK in 4776ms (Views: 46.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:29:37 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 81ms (Views: 43.6ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:29:38 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Redirected to https://www.sandbox.paypal.com/cgi-bin/webscr?amount=47.0&business=kajal_priyadarshani-facilitator%40seologistics.com&cmd=_xclick&custom=47&invoice=47&notify_url=http%3A%2F%2Flocalhost%3A3000&quantity=1&return=http%3A%2F%2Flocalhost%3A3000%2Fpaypal_callback&upload=1
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:29:41 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Redirected to https://www.sandbox.paypal.com/cgi-bin/webscr?amount=47.0&business=kajal_priyadarshani-facilitator%40seologistics.com&cmd=_xclick&custom=47&invoice=47&notify_url=http%3A%2F%2Flocalhost%3A3000&quantity=1&return=http%3A%2F%2Flocalhost%3A3000%2Fpaypal_callback&upload=1
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:30:21 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (2.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Redirected to https://www.sandbox.paypal.com/cgi-bin/webscr?amount=47.0&business=kajal_priyadarshani-facilitator%40seologistics.com&cmd=_xclick&custom=47&invoice=47&notify_url=http%3A%2F%2Flocalhost%3A3000&quantity=1&return=http%3A%2F%2Flocalhost%3A3000%2Fpaypal_callback&upload=1
+Completed 302 Found in 36ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:30:22 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Redirected to https://www.sandbox.paypal.com/cgi-bin/webscr?amount=47.0&business=kajal_priyadarshani-facilitator%40seologistics.com&cmd=_xclick&custom=47&invoice=47&notify_url=http%3A%2F%2Flocalhost%3A3000&quantity=1&return=http%3A%2F%2Flocalhost%3A3000%2Fpaypal_callback&upload=1
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-27 18:31:50 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 69ms (Views: 36.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:31:51 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Redirected to https://www.sandbox.paypal.com/cgi-bin/webscr?amount=47.0&business=kajal_priyadarshani-buyer%40seologistics.com&cmd=_xclick&custom=47&invoice=47&notify_url=http%3A%2F%2Flocalhost%3A3000&quantity=1&return=http%3A%2F%2Flocalhost%3A3000%2Fpaypal_callback&upload=1
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/products/47" for 127.0.0.1 at 2016-10-27 18:31:56 +0530
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+Redirected to https://www.sandbox.paypal.com/cgi-bin/webscr?amount=47.0&business=kajal_priyadarshani-buyer%40seologistics.com&cmd=_xclick&custom=47&invoice=47&notify_url=http%3A%2F%2Flocalhost%3A3000&quantity=1&return=http%3A%2F%2Flocalhost%3A3000%2Fpaypal_callback&upload=1
+Completed 302 Found in 3ms (ActiveRecord: 0.8ms)
+
+

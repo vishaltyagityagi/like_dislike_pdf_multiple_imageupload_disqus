@@ -40,7 +40,42 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    if @product.present?
+      redirect_to @product.paypal_url(@product)
+    end
   end
+
+
+# get all responce here and save in your table
+  def paypal_callback
+    binding.pry
+    # @user = User.find(params[:invoice]) rescue ""
+    # if @user.present?
+    #   @transaction_detail = @user.transaction_details.new(
+    #     plan_id: params[:custom],
+    #     payer_id: params[:payer_id],
+    #     payer_email: params[:payer_email],
+    #     payment_date: params[:payment_date],
+    #     payment_status: params[:payment_status],
+    #     payment_fee: params[:payment_fee],
+    #     payment: params[:payment_gross],
+    #     payment_type: params[:payment_type],
+    #     mc_currency: params[:mc_currency],
+    #     first_name: params[:first_name],
+    #     last_name: params[:last_name],
+    #     txn_id: params[:txn_id],
+    #     receiver_id: params[:receiver_id],
+    #     receiver_email: params[:receiver_email],
+    #     address_name: params[:address_name],
+    #     address_street: params[:address_street],
+    #     address_city: params[:address_city],
+    #     address_state: params[:address_state],
+    #     address_country: params[:address_country],
+    #     address_country_code: params[:address_country_code],
+    #     address_zip: params[:address_zip]
+    #   )
+  end
+
 
   # GET /products/new
   def new
@@ -73,6 +108,7 @@ class ProductsController < ApplicationController
     end
   end
 
+  
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
