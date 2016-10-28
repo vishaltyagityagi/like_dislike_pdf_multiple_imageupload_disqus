@@ -1,7 +1,7 @@
 development: &development
     mode: test
-    login: 99JdMr2V
-    key: 3z52r5M95BD7Uvfu
+    login: jkjjjjj6
+    key: fjfj5r4656656fjj
  
 production:
    <<: *development

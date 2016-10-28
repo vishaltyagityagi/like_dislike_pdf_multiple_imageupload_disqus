@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :paypal]
 
   # GET /products
   # GET /products.json
@@ -42,18 +42,18 @@ class ProductsController < ApplicationController
   def show
     @payment = Payment.new
     @creditcard = ActiveMerchant::Billing::CreditCard.new
-    if @product.present?
-      redirect_to @product.paypal_url(@product)
-    end
+    
   end
-  
+
+
   def payment_create
     ActiveMerchant::Billing::Base.mode = :test
-    gateway = ActiveMerchant::Billing::AuthorizeNetGateway.new(:login=> '99JdMr2V',:password => '3z52r5M95BD7Uvfu')
+    gateway = ActiveMerchant::Billing::AuthorizeNetGateway.new(:login=> ' API Login ID',:password => 'Transaction Key')
     @payment = Payment.new(amount: params[:payment][:amount])
     @creditcard = ActiveMerchant::Billing::CreditCard.new(first_name: params[:creditcard][:first_name] ,last_name: params[:creditcard][:name], number: params[:creditcard][:number], month: params[:creditcard][:month], year: params[:creditcard][:year], verification_value: params[:creditcard][:verification_value].to_i)
     if @creditcard.validate.empty?
       @response = gateway.purchase(@payment.amount, @creditcard)
+      byebug
       if @response.success?
         flash[:notice] = "Successfully charged $#{sprintf("%.2f", @payment.amount )} to the credit card #{@creditcard.number}"
       else
@@ -64,10 +64,16 @@ class ProductsController < ApplicationController
     redirect_to :back
   end
 
-
-# get all responce here and save in your table
+def paypal
+  if @product.present?
+      redirect_to @product.paypal_url(@product)
+    end
+  end
+  
+# get all responce in params and save in your table
   def paypal_callback
     binding.pry
+
     # @user = User.find(params[:invoice]) rescue ""
     # if @user.present?
     #   @transaction_detail = @user.transaction_details.new(

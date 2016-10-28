@@ -31,21 +31,30 @@
 	<%= link_to (current_user.like.present? ? "dislike"  : " like"), like_create_path(likeable_id: @product.id, likeable_type: "Product"), method: :post   %>(<%= @product.likes.where(like: true).count %>)
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %><br>
 
+<h1><%= link_to 'Click for paypal payment', paypal_path(@product.id) %></h1>
+<br>
+<br>
+<br>
+<h1>This form is for authorize.net</h1>
 <%= form_for @payment, url: payment_create_path do |f| %>
-  Amount:<%= f.text_field :amount %><br>
+  Payment Amount:<%= f.text_field :amount %><br>
   <%= fields_for :creditcard, @creditcard do |cc| %><br>
     First_Name:<%= cc.text_field :first_name %><br>
    last Name:<%= cc.text_field :name %><br>
 
-    Number: <%= cc.text_field :number %><br>
+    card Number: <%= cc.text_field :number %><br>
     Month: <%= cc.select :month, Date::ABBR_MONTHNAMES.compact.each_with_index.collect{|m, i| [m, i+1]}, {:prompt => 'Select'} %><br>
     Year: <%= cc.select :year, Array.new(15){|i| Date.current.year+i}, {:prompt => 'Select'} %><br>
-    verification_value: <%= cc.text_field :verification_value %><br>
+    CVV verification_value: <%= cc.text_field :verification_value %><br>
   <%= f.submit 'Pay' %><br>
   <% end %>
 
+  <% end %>
+  Response
+  <% response.each do |res| %>
+  <%=res.transaction_id %>
   <% end %>
 
 <style type="text/css">

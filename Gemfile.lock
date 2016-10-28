@@ -127,7 +127,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
-    parser (2.3.1.2)
+    parser (2.3.1.4)
       ast (~> 2.2)
     pdf-core (0.6.1)
     pg (0.19.0)
@@ -189,7 +189,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    searchkick (1.3.5)
+    searchkick (1.4.0)
       activemodel
       elasticsearch (>= 1)
       hashie
@@ -216,7 +216,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
-    unicode-display_width (1.1.0)
+    unicode-display_width (1.1.1)
     warden (1.2.6)
       rack (>= 1.0)
     web-console (3.3.1)
@@ -228,7 +228,7 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
     wicked_pdf (1.1.0)
-    wkhtmltopdf-binary (0.12.3)
+    wkhtmltopdf-binary (0.9.9.3)
 
 PLATFORMS
   ruby
@@ -240,7 +240,6 @@ DEPENDENCIES
   carrierwave!
   coffee-rails (~> 4.2)
   devise (~> 4.2.0)
-  elasticsearch
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

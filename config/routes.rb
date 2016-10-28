@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   post '/like' => "products#like_create",  as: :like_create
   post '/payment_create' => "products#payment_create"
+  get '/product/:id/paypal' => "products#paypal", as: :paypal
+
   
 end
