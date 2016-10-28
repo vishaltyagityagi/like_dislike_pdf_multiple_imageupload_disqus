@@ -1,0 +1,10 @@
+development: &development
+    mode: test
+    login: 99JdMr2V
+    key: 3z52r5M95BD7Uvfu
+ 
+production:
+   <<: *development
+ 
+test:
+   <<: *development

@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   root to: 'products#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   post '/like' => "products#like_create",  as: :like_create
+  post '/payment_create' => "products#payment_create"
   
 end

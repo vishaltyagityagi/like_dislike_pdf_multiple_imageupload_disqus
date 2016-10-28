@@ -40,9 +40,28 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @payment = Payment.new
+    @creditcard = ActiveMerchant::Billing::CreditCard.new
     if @product.present?
       redirect_to @product.paypal_url(@product)
     end
+  end
+  
+  def payment_create
+    ActiveMerchant::Billing::Base.mode = :test
+    gateway = ActiveMerchant::Billing::AuthorizeNetGateway.new(:login=> '99JdMr2V',:password => '3z52r5M95BD7Uvfu')
+    @payment = Payment.new(amount: params[:payment][:amount])
+    @creditcard = ActiveMerchant::Billing::CreditCard.new(first_name: params[:creditcard][:first_name] ,last_name: params[:creditcard][:name], number: params[:creditcard][:number], month: params[:creditcard][:month], year: params[:creditcard][:year], verification_value: params[:creditcard][:verification_value].to_i)
+    if @creditcard.validate.empty?
+      @response = gateway.purchase(@payment.amount, @creditcard)
+      if @response.success?
+        flash[:notice] = "Successfully charged $#{sprintf("%.2f", @payment.amount )} to the credit card #{@creditcard.number}"
+      else
+        raise StandardError, @response.message
+      end
+    end
+
+    redirect_to :back
   end
 
 
@@ -128,5 +147,9 @@ class ProductsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
       params.require(:product).permit(:name, :desc, :address, :user_id, {image: []})
+    end
+
+    def payment_params
+      params.require(:payment).permit(:amount, :status, :transaction_number)
     end
 end
