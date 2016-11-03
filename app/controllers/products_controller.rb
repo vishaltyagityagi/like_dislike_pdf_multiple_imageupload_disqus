@@ -4,6 +4,35 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
 
+  def express
+    PayPal::SDK.configure({
+      :mode => "sandbox", 
+      :username => "jb-us-seller_api1.paypal.com", 
+      :password => "WX4WTU3S8MY44S7F", 
+      :signature => "AFcWxV21C7fd0v3bYYYRCpSSRl31A7yDhhsPUU2XhtMoZXsWHFxu-RWy"
+    })
+    @api = PayPal::SDK::Merchant::API.new
+    @set_express_checkout = @api.build_set_express_checkout({
+      :Version => "104.0",
+      :SetExpressCheckoutRequestDetails => {
+      :ReturnURL => "http://localhost:4000",
+      :CancelURL => "http://localhost:4000",
+      :PaymentDetails =>[{
+      :OrderTotal =>{
+      :currencyID => "USD",
+      :value => "1.00"},
+      :PaymentAction => "Sale"}]}})
+    @set_express_checkout_response = @api.set_express_checkout(@set_express_checkout) 
+      if @set_express_checkout_response.success?
+        @set_express_checkout_response.CorrelationID
+        flash[:notice] = "Successfully charged"
+      else
+        @set_express_checkout_response.Errors
+      end
+      redirect_to :back
+
+  end
+
   def like_create
     @product = Product.find(params[:likeable_id])
     like = Like.find_or_initialize_by(likeable_id: params[:likeable_id], :likeable_type=>@product.class.name.constantize,:user_id=>current_user.id)
@@ -49,7 +78,7 @@ class ProductsController < ApplicationController
   
   def payment_create
     ActiveMerchant::Billing::Base.mode = :test
-    gateway = ActiveMerchant::Billing::AuthorizeNetGateway.new(:login=> '99JdMr2V',:password => '3z52r5M95BD7Uvfu')
+    gateway = ActiveMerchant::Billing::AuthorizeNetGateway.new(:login=> '99JdMr2V',:password => 'key')
     @payment = Payment.new(amount: params[:payment][:amount])
     @creditcard = ActiveMerchant::Billing::CreditCard.new(first_name: params[:creditcard][:first_name] ,last_name: params[:creditcard][:name], number: params[:creditcard][:number], month: params[:creditcard][:month], year: params[:creditcard][:year], verification_value: params[:creditcard][:verification_value].to_i)
     if @creditcard.validate.empty?

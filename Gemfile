@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 ruby '2.3.1'
 
@@ -62,3 +62,5 @@ gem 'wicked_pdf'
 gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 gem 'activemerchant', :require => 'active_merchant'
 gem 'activemerchant'
+gem 'paypal-sdk-rest'
+gem 'paypal-sdk-merchant'
