@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   post '/like' => "products#like_create",  as: :like_create
   post '/payment_create' => "products#payment_create"
   get  '/express' => "products#express"
-end
+  get '/product/:id/paypal' => "products#paypal", as: :paypal
+
+  end

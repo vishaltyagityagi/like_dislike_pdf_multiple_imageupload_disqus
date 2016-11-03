@@ -57,7 +57,7 @@ gem 'wicked_pdf'
   gem 'meta-tags'
   gem 'rubocop', '~> 0.43.0', require: false
   gem 'searchkick'
-  gem 'elasticsearch'
+#   gem 'elasticsearch'
   gem 'brakeman'
 gem "carrierwave", :github => "carrierwaveuploader/carrierwave"
 gem 'activemerchant', :require => 'active_merchant'

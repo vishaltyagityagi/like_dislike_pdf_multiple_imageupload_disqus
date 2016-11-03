@@ -15,7 +15,7 @@ class Product < ApplicationRecord
 
 def paypal_url(plan)
     values = {
-      business: "buyer@gmail.com.com",
+      business: "buyer@gmail.com",
       cmd: "_xclick",
       upload: 1,
       return: "http://localhost:3000/paypal_callback",
