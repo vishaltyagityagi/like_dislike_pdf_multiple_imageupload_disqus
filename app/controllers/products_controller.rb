@@ -45,25 +45,36 @@ class ProductsController < ApplicationController
     redirect_to product_path(@product)
   end
 
+
+# Wikitpdf generate action
    def download_products
     @products = Product.all
 
     pdf = WickedPdf.new.pdf_from_string(
-    render_to_string('products/index.html.erb', layout: false)
+      render_to_string('products/index.html.erb', layout: false)
     )
     send_data pdf, :filename => "products.pdf", :type => "application/pdf", :disposition => "attachment"
   end
 
+
+
+# PRAWN PDF GENERATE ACTION
   def index
     @products = Product.all
     respond_to do |format|
       format.html
       format.pdf do
         pdf = ReportPdf.new(@products)
-        send_data pdf.render, filename: 'report.pdf', type: 'application/pdf'
+        pdf.encrypt_document(
+        :user_password  => 'password', 
+        :owner_password => "vishal",
+        :permissions => { :print_document     => false,
+                          :modify_contents    => false,
+                          :copy_contents      => false,
+                          :modify_annotations => false })
+        send_data pdf.render, filename: 'report.pdf', type: 'application/pdf', :disposition => 'inline'
       end
     end
-
   end
 
   # GET /products/1

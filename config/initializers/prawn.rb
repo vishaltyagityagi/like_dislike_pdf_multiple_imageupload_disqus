@@ -1,15 +1,24 @@
 require 'prawn/table'
 class ReportPdf < Prawn::Document
+
+  # HERE WE CAN DEFINE THE METHOD NAME
   def initialize(products)
     super()
     @products = products
     header
     text_content
+    start_new_page
+    product_rows
   end
 
   def header
     #This inserts an image in the pdf file and sets the size of the image
     image "#{Rails.root}/app/assets/images/header.png", width: 530, height: 150
+     @products.each do |product|
+      "#{product.id}"
+      [product.id, product.name, product.desc, product.address ]
+      "#{Rails.root}/app/assets/images/header.png"
+    end
   end
 
   def text_content
@@ -27,12 +36,23 @@ class ReportPdf < Prawn::Document
       text "Duis vel tortor elementum, ultrices tortor vel, accumsan dui. Nullam in dolor rutrum, gravida turpis eu, vestibulum lectus. Pellentesque aliquet dignissim justo ut fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut venenatis massa non eros venenatis aliquet. Suspendisse potenti. Mauris sed tincidunt mauris, et vulputate risus. Aliquam eget nibh at erat dignissim aliquam non et risus. Fusce mattis neque id diam pulvinar, fermentum luctus enim porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
     end
 
+    bounding_box([300, y_position], :width => 270, :height => 300) do
+      text "Duis vel", size: 15, style: :bold
+      text "Duis vel tortor elementum, ultrices tortor vel, accumsan dui. Nullam in dolor rutrum, gravida turpis eu, vestibulum lectus. Pellentesque aliquet dignissim justo ut fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut venenatis massa non eros venenatis aliquet. Suspendisse potenti. Mauris sed tincidunt mauris, et vulputate risus. Aliquam eget nibh at erat dignissim aliquam non et risus. Fusce mattis neque id diam pulvinar, fermentum luctus enim porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    end
+
+    bounding_box([300, y_position], :width => 270, :height => 300) do
+      text "Duis vel", size: 15, style: :bold
+      text "Duis vel tortor elementum, ultrices tortor vel, accumsan dui. Nullam in dolor rutrum, gravida turpis eu, vestibulum lectus. Pellentesque aliquet dignissim justo ut fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut venenatis massa non eros venenatis aliquet. Suspendisse potenti. Mauris sed tincidunt mauris, et vulputate risus. Aliquam eget nibh at erat dignissim aliquam non et risus. Fusce mattis neque id diam pulvinar, fermentum luctus enim porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    end
+
   end
 
     # This makes a call to product_rows and gets back an array of data that will populate the columns and rows of a table
     # I then included some styling to include a header and make its text bold. I made the row background colors alternate between grey and white
     # Then I set the table column widths
-    
+
+
 
   def product_rows
     [['#', 'name', 'desc', 'address']] +
@@ -40,4 +60,5 @@ class ReportPdf < Prawn::Document
       [product.id, product.name, product.desc, product.address ]
     end
   end
+
 end

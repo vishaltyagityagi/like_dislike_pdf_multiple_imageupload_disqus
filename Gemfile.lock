@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/carrierwaveuploader/carrierwave.git
-  revision: ec850831eeaf0f2f45c002bcec9b90698b78d0d8
+  revision: 1d2f26428fe944977a91fe5fdf2fb033d5a13239
   specs:
-    carrierwave (1.0.0.beta)
+    carrierwave (1.0.0.rc)
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
@@ -59,12 +59,12 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    arel (7.1.2)
+    arel (7.1.4)
     ast (2.3.0)
     bcrypt (3.1.11)
-    brakeman (3.4.0)
+    brakeman (3.4.1)
     builder (3.2.2)
-    byebug (9.0.5)
+    byebug (9.0.6)
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -123,9 +123,8 @@ GEM
     multi_json (1.12.1)
     multipart-post (2.0.0)
     nio4r (1.2.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
     parser (2.3.1.4)
       ast (~> 2.2)
@@ -139,7 +138,6 @@ GEM
       xml-simple
     pdf-core (0.6.1)
     pg (0.19.0)
-    pkg-config (1.1.7)
     powerpack (0.1.1)
     prawn (2.1.0)
       pdf-core (~> 0.6.1)
@@ -178,7 +176,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.1.0)
     rake (11.3.0)
-    rb-fsevent (0.9.7)
+    rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     responders (2.3.0)
@@ -202,10 +200,11 @@ GEM
       elasticsearch (>= 1)
       hashie
     slop (3.6.0)
-    spring (1.7.2)
-    spring-watcher-listen (2.0.0)
+    spring (2.0.0)
+      activesupport (>= 4.2)
+    spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
-      spring (~> 1.2)
+      spring (>= 1.2, < 3.0)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -222,12 +221,12 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.0.2)
+    uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.1.1)
     warden (1.2.6)
       rack (>= 1.0)
-    web-console (3.3.1)
+    web-console (3.4.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       debug_inspector
@@ -236,12 +235,8 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
     wicked_pdf (1.1.0)
-<<<<<<< HEAD
-    wkhtmltopdf-binary (0.12.3)
+    wkhtmltopdf-binary (0.12.3.1)
     xml-simple (1.1.5)
-=======
-    wkhtmltopdf-binary (0.9.9.3)
->>>>>>> 30cdf5dc2c253845f91711e9844e4a3ff07f2f51
 
 PLATFORMS
   ruby
