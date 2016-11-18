@@ -19048,3 +19048,30 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 33ms (Views: 28.0ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-11-18 17:06:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 452ms (Views: 400.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/scrap" for 127.0.0.1 at 2016-11-18 17:07:08 +0530
+Processing by ProductsController#scrap as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+DEPRECATION WARNING: `redirect_to :back` is deprecated and will be removed from Rails 5.1. Please use `redirect_back(fallback_location: fallback_location)` where `fallback_location` represents the location to use if the request has no HTTP referer information. (called from scrap at /home/vishal/Desktop/desktop/code_ruby_demo/like_dislike/app/controllers/products_controller.rb:64)
+Redirected to http://localhost:3000/
+Completed 302 Found in 24121ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-18 17:07:32 +0530
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
