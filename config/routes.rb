@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   post '/payment_create' => "products#payment_create"
   get  '/express' => "products#express"
   get '/product/:id/paypal' => "products#paypal", as: :paypal
+  get '/scrap' => "products#scrap", as: :scrap
 
   end
