@@ -4,66 +4,66 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
 
-def scrap
+  def scrap
 
-  page = Nokogiri::HTML(open("https://apkpure.co/"))
+    page = Nokogiri::HTML(open("https://apkpure.co/"))
 
-  @text = []
-  @images= []
-  @download_button_name = []
-  @download_links = []
-  @all_website_urls = []
+    @text = []
+    @images= []
+    @download_button_name = []
+    @download_links = []
+    @all_website_urls = []
 
-  # name
+    # name
 
-  page.css('div.main div.box ul.top-list dl .title-dd a').each do |el|
-   @text << el.text
-  end
-
-
-  # icon images
-
-  page.css('div.main div.box ul.top-list dl dt img').each do |el|
-  @images <<  el['src']
-  end
-
-  @images.each do |image|
-  File.open("#{Rails.root}/scrape_data/#{image.split('/').last}", "wb") do |f|
-    f.write(open(image).read)
-  end
-
-  end
-
-  # on this page(https://apkpure.co/) download links are not present, insted of download links only name are present
-
-  page.css('div.main div.box ul.top-list dl .down a').each do |el|
-   @download_button_name <<  el["href"]
-  end
-
-  # fetch all download links of  clash-of-clans on (https://apkpure.co/clash-of-clans/) this url
-
-  Nokogiri::HTML(open("https://apkpure.co/clash-of-clans/")).css('.faq_cat dl dd .down').each do |el|
-   @download_links <<  el["href"]
-  end
-
-  # All website  urls
-
-  Nokogiri::HTML(open("https://apkpure.co/")).css('a').each do |el|
-   @all_website_urls << el["href"].to_s
-  end
-
-  # puts Text ="#{@text}", Images= "#{@images}", Download_button_name = "#{@download_button_name}", Download_links = "#{@download_links}", All_Website_url = "#{@all_website_urls}"
-
-
-  CSV.open("/#{Rails.root}/scrape_data/csv_file/file.csv", "wb") do |csv|
-    csv << ["Text", "Images", "Download_button_name", "Download_links", "All_Website_url"]
-    (0..@text.length).each do |index|
-       csv << [@text[index], @images[index], @download_button_name[index], @download_links[index], @all_website_urls[index]]
+    page.css('div.main div.box ul.top-list dl .title-dd a').each do |el|
+     @text << el.text
     end
-  end
-        redirect_to :back
 
-end
+
+    # icon images
+
+    page.css('div.main div.box ul.top-list dl dt img').each do |el|
+    @images <<  el['src']
+    end
+
+    @images.each do |image|
+    File.open("#{Rails.root}/scrape_data/#{image.split('/').last}", "wb") do |f|
+      f.write(open(image).read)
+    end
+
+    end
+
+    # on this page(https://apkpure.co/) download links are not present, insted of download links only name are present
+
+    page.css('div.main div.box ul.top-list dl .down a').each do |el|
+     @download_button_name <<  el["href"]
+    end
+
+    # fetch all download links of  clash-of-clans on (https://apkpure.co/clash-of-clans/) this url
+
+    Nokogiri::HTML(open("https://apkpure.co/clash-of-clans/")).css('.faq_cat dl dd .down').each do |el|
+     @download_links <<  el["href"]
+    end
+
+    # All website  urls
+
+    Nokogiri::HTML(open("https://apkpure.co/")).css('a').each do |el|
+     @all_website_urls << el["href"].to_s
+    end
+
+    # puts Text ="#{@text}", Images= "#{@images}", Download_button_name = "#{@download_button_name}", Download_links = "#{@download_links}", All_Website_url = "#{@all_website_urls}"
+
+
+    CSV.open("/#{Rails.root}/scrape_data/csv_file/file.csv", "wb") do |csv|
+      csv << ["Text", "Images", "Download_button_name", "Download_links", "All_Website_url"]
+      (0..@text.length).each do |index|
+         csv << [@text[index], @images[index], @download_button_name[index], @download_links[index], @all_website_urls[index]]
+      end
+    end
+          redirect_to :back
+
+  end
 
   def express
     PayPal::SDK.configure({
